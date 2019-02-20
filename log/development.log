@@ -153,3 +153,10 @@ Started GET "/posts/new" for 99.55.166.131 at 2019-02-20 22:44:09 +0000
 Processing by PostsController#new as HTML
   Rendered posts/new.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=test&post%5Bdescription%5D=test12&authenticity_token=nUgoQHUQyIQQNIXwhWhXfaOdPzKotdkdqbbfDJX5QOIPp5w3o8KVzC%2FALaiF%2BT%2FypXkmOd%2FnlEBIZ7%2F7JO1R8Q%3D%3D" for 99.55.166.131 at 2019-02-20 22:44:18 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"test", "description"=>"test12"}, "authenticity_token"=>"nUgoQHUQyIQQNIXwhWhXfaOdPzKotdkdqbbfDJX5QOIPp5w3o8KVzC/ALaiF+T/ypXkmOd/nlEBIZ7/7JO1R8Q=="}
+  Rendered posts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
